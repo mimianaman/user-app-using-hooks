@@ -30,7 +30,7 @@ const UserDetails = () => {
     fetchUser();
   }, []);
   return (
-    <div className="container">
+    <div className="container bg-white">
       <Link to="/">Go Back</Link>
       <div className="py-4">
         <Icon path={mdiAccount} size={1} color="red" />

@@ -29,12 +29,7 @@ const UserList = () => {
       ) : (
         users.map((user, index) => (
           <div className="col-md-3" key={index}>
-            <User
-              firstName={user.name}
-              userName={user.username}
-              email={user.email}
-              id={user.id}
-            />
+            <User name={user.name} userName={user.username} id={user.id} />
           </div>
         ))
       )}
