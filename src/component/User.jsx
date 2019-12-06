@@ -2,7 +2,14 @@ import React from "react";
 import { useHistory } from "react-router";
 import Avatar from "react-avatar";
 
-const colors = ["#f7c047", "#819a4f", "#fc0641"];
+const colors = [
+  "#f7c047",
+  "#819a4f",
+  "#fc0641",
+  "#808000",
+  "#800080",
+  "#000080"
+];
 
 export const User = ({ name, userName, email, id }) => {
   const history = useHistory();

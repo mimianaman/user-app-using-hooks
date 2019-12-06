@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Icon from "@mdi/react";
-import { mdiAccount, mdiCellphone } from "@mdi/js";
+import { mdiAccount, mdiCellphone, mdiMapMarker, mdiDomain } from "@mdi/js";
 import { useParams, Link } from "react-router-dom";
 
 const UserDetails = () => {
@@ -41,10 +41,14 @@ const UserDetails = () => {
         {` phone number is ${user && user.phone}`}
       </div>
       <div className="py-4">
+        <Icon path={mdiMapMarker} size={1} color="blue" />
         {` Address is ${user && user.address.street} ${user &&
           user.address.city} ${user && user.address.zipcode}`}
       </div>
-      <div className="py-4">{` company is ${user && user.company.name}`}</div>
+      <div className="py-4">
+        <Icon path={mdiDomain} size={1} color="blue" />
+        {` company is ${user && user.company.name}`}
+      </div>
     </div>
   );
 };
